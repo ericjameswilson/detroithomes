@@ -75,13 +75,13 @@ $(document).ready(function() {
         	counter++;
         });
       });	
-      $('body').jGravity({
-            target: 'everything',
-           ignoreClass: 'ignoreMe',
-           weight:1,
-           depth: 5,
-           drag: false
-         });
+     // $('body').jGravity({
+       //     target: 'everything',
+       //    ignoreClass: 'ignoreMe',
+        //   weight:1,
+        //   depth: 5,
+        //   drag: false
+        // });
        				
     },
   });
