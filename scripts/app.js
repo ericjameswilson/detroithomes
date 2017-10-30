@@ -7,35 +7,35 @@ $(document).ready(function() {
 	    
       $.each(data, function(i, house) {
         if (house.columncount == 1) {
-          $('#col-1').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +  house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-1').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 2) {
-          $('#col-2').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-2').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 3) {
-          $('#col-3').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-3').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 4) {
-          $('#col-4').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-4').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 5) {
-          $('#col-5').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-5').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 6) {
-          $('#col-6').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +  house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-6').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 7) {
-          $('#col-7').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">'  +  house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-7').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">'  + house.addressnumber + '</div>')
         } else if (house.columncount == 8) {
-          $('#col-8').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-8').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 9) {
-          $('#col-9').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-9').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 10) {
-          $('#col-10').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-10').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 11) {
-          $('#col-11').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +  house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-11').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 12) {
-          $('#col-12').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +  house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-12').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 13) {
-          $('#col-13').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' +house.addressfull + '</div>')
+          $('#col-13').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 14) {
-          $('#col-14').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' +   house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-14').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 15) {
-          $('#col-15').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="house fade' + '">' + house.taxpayer + ' ' + house.addressfull + '</div>')
+          $('#col-15').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
 
         }
       });
@@ -44,7 +44,7 @@ $(document).ready(function() {
 			
 			
 			  
-	       $('.house').each(function(i, house) {
+	    $('.fade').each(function(i, house) {
         $(this).delay(5 * i).fadeIn(5);
 
 
@@ -57,10 +57,10 @@ $(document).ready(function() {
         var counter = 1300;
         var demolitionCountdown = setInterval(function(i) {
 
-          $('.house').each(function() {
+          $('.fade').each(function() {
             var boxTimer = $(this).attr('data-timer');
             if (boxTimer == counter) {
-              $(this).fadeOut(1000);
+              $(this).fadeOut(70000);
             } else if (counter < 1) {
               clearInterval(demolitionCountdown);
             }
@@ -69,19 +69,20 @@ $(document).ready(function() {
           })
           counter--;
            //console.log(counter);
-        }, 1000);
+        }, 500);
         
         $('#button').click(function(){
         	counter++;
         });
       });	
-     // $('body').jGravity({
-       //     target: 'everything',
-       //    ignoreClass: 'ignoreMe',
-        //   weight:1,
-        //   depth: 5,
-        //   drag: false
-        // });
+      
+	$('body').jGravity({
+		target: 'everything',
+		ignoreClass: 'ignoreMe',
+		weight:1,
+		depth: 5,
+		drag: false
+        });
        				
     },
   });
