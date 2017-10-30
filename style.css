@@ -13,7 +13,7 @@ body {
   font-size: 2vw;
   color: white;
   text-align: center;
-  font-family: helvetica;
+  font-family: america;
   background-color: black;
 }
 
@@ -32,6 +32,13 @@ body {
 
 .cf {
   *zoom: 1;
+}
+
+@font-face {
+    font-family: 'america';
+    src: url('america.woff') format('woff'),
+    url('america.ttf') format('ttf');
+
 }
 
 .container {
