@@ -1,10 +1,10 @@
-$(document).ready(function() { 
- $.ajax({
+$(document).ready(function() {
+$.ajax({
     type: 'GET',
     url: 'https://raw.githubusercontent.com/ericjameswilson/int3p2json/master/data3.json',
     dataType: 'json',
     success: function(data) {
-	    
+
       $.each(data, function(i, house) {
         if (house.columncount == 1) {
           $('#col-1').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
@@ -19,7 +19,7 @@ $(document).ready(function() {
         } else if (house.columncount == 6) {
           $('#col-6').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 7) {
-          $('#col-7').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">'  + house.addressnumber + '</div>')
+          $('#col-7').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 8) {
           $('#col-8').prepend('<div data-timer="' + house.timer + '" data-columncount="' + house.columncount + '" class="fade' + '">' + house.addressnumber + '</div>')
         } else if (house.columncount == 9) {
@@ -41,49 +41,40 @@ $(document).ready(function() {
       });
     },
     complete: function() {
-			
-			
-			  
-	    $('.fade').each(function(i, house) {
+
+      $('.fade').each(function(i, house) {
         $(this).delay(5 * i).fadeIn(5);
+      });
 
+      var timer = $(this).attr('data-timer');
+      var counter = 1300;
+      var demolitionCountdown = setInterval(function(i) {
+        $('.fade').each(function() {
+          var boxTimer = $(this).attr('data-timer');
+          if (boxTimer == counter) {
+            $(this).fadeOut(2000);
+          } else if (counter < 1) {
+            clearInterval(demolitionCountdown);
+          }
+          //      boxTimer--;
+          //		$(this).attr('data-timer', boxTimer);
+        })
+        counter--;
+        console.log(counter);
+      }, 4000);
+      $('#button').click(function() {
+        counter++;
+      });
+    });
 
-        //var house = this;
-        //var $house = $(house);
-
-        //KP 
-        //$(this) = individial .house element from the .each function
-        var timer = $(this).attr('data-timer');
-        var counter = 1300;
-        var demolitionCountdown = setInterval(function(i) {
-
-          $('.fade').each(function() {
-            var boxTimer = $(this).attr('data-timer');
-            if (boxTimer == counter) {
-              $(this).fadeOut(70000);
-            } else if (counter < 1) {
-              clearInterval(demolitionCountdown);
-            }
-            //      boxTimer--;
-            //		$(this).attr('data-timer', boxTimer);
-          })
-          counter--;
-           //console.log(counter);
-        }, 500);
-        
-        $('#button').click(function(){
-        	counter++;
-        });
-      });	
-      
-	$('body').jGravity({
-		target: 'everything',
-		ignoreClass: 'ignoreMe',
-		weight:1,
-		depth: 5,
-		drag: false
-        });
-       				
-    },
+  $('body').jGravity({
+    target: 'everything',
+    ignoreClass: 'ignoreMe',
+    weight: 1,
+    depth: 5,
+    drag: false
   });
+
+},
+});
 });
