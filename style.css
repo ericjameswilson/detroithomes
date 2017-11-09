@@ -10,6 +10,18 @@ html {
 
 body {
   margin: 0;
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  font-family: america;
+  background-color: black;
+}
+
+@font-face {
+    font-family: 'america';
+    src: url('america.woff') format('woff'),
+    url('america.ttf') format('ttf');
+
 }
 
 /* Clear Float */
@@ -29,35 +41,8 @@ body {
   *zoom: 1;
 }
 
-/* DON'T DELETE THIS */
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-@font-face {
-  font-family: 'america';
-  src: url('america.woff') format('woff'), url('america.ttf') format('ttf');
-}
-
-body {
-  margin: 0;
-  font-size: 2vw;
-  color: white;
-  text-align: center;
-  font-family: america;
-  background-color: black;
-}
-
-#container {
-  width: 100vw;
-  height: 100vh;
+.col {
+  float: left;
 }
 
 .house {
@@ -66,13 +51,20 @@ body {
   line-height: 5vh;
   background: black;
   border: 1px solid white;
-  float: left;
 }
+
 
 .house:hover {
   background: lime;
 }
-
-#button {
-  cursor: pointer;
+.countdown{
+	
 }
+/*p{
+	font-size: 200px;
+	text-align: center;
+	z-index: -10000000000;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}*/
